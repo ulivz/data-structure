@@ -19,7 +19,7 @@ export default class LinkedList {
 
   /**
    * Add a new element to the tail of the list.
-   * @param element
+   * @param {any} element
    */
   append(element) {
     const newNode = new LinkedNode(element)
@@ -37,8 +37,8 @@ export default class LinkedList {
 
   /**
    * insert a new element into the specific position of the list.
-   * @param position
-   * @param element
+   * @param {number} position
+   * @param {any} element
    */
   insert(position, element) {
     if (position < 0 || position > this.length) return false
@@ -62,11 +62,13 @@ export default class LinkedList {
   }
 
   /**
-   * Remove an item from the lists
+   * Remove an item from the lists.
    * @param {any} element
+   * @returns {any} the deleted element
    */
   remove(element) {
-
+    const position = this.indexOf(element)
+    return this.removeAt(position)
   }
 
   /**
