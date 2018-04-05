@@ -3,6 +3,7 @@ import Queue, { PriorityQueue, QueueElement } from './Queue'
 import LinkedList, { LinkedNode } from './LinkedList'
 import DoublyLinkedList, { DoublyLinkedNode } from './DoublyLinkedList'
 import Set from './Set'
+import Dictionary from './Dictionary'
 
 export {
   Stack,
@@ -16,7 +17,8 @@ export {
   DoublyLinkedList,
   DoublyLinkedNode,
 
-  Set
+  Set,
+  Dictionary
 }
 
 export default {
@@ -31,5 +33,6 @@ export default {
   DoublyLinkedList,
   DoublyLinkedNode,
 
-  Set
+  Set,
+  Dictionary
 }
