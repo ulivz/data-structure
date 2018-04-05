@@ -33,3 +33,14 @@ test('LinkedList - removeAt', () => {
   linkedList.removeAt(1)
   expect(linkedList.toString()).toBe('1,3')
 })
+
+test('LinkedList - indexOf', () => {
+  const linkedList = new LinkedList()
+  linkedList.append(1)
+  linkedList.append(2)
+  linkedList.append(3)
+  expect(linkedList.indexOf(1)).toBe(0)
+  expect(linkedList.indexOf(2)).toBe(1)
+  expect(linkedList.indexOf(3)).toBe(2)
+  expect(linkedList.indexOf(4)).toBe(-1)
+})
