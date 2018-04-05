@@ -15,7 +15,7 @@
     "test": "jest",
     "lint": "xo src/**",
     "prepublish": "npm run build",
-    "build": "bili --filename index",
+    "build": "bili --filename [name][suffix].js --format umd,umd-min,cjs,es --banner",
     "example": "poi",
     "build:example": "poi build",
     "gh": "gh-pages -d example/dist",
@@ -47,15 +47,14 @@
       }
     }
   },
-  "dependencies": {},
   "devDependencies": {
-    "jest-cli": "^19.0.0",
-    "eslint-config-rem": "^3.0.0",
-    "xo": "^0.18.0",
     "babel-preset-env": "^1.4.0",
+    "eslint-config-rem": "^3.0.0",
     "gh-pages": "^1.0.0",
+    "jest-cli": "^19.0.0",
     "poi": "^9.1.4",
-    "bili": "^0.17.0"
+    "xo": "^0.18.0",
+    "bili": "^3.0.15"
   },
   "xo": {
     "extends": "rem",
