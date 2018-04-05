@@ -19,6 +19,13 @@ test('DoublyLinkedList', () => {
 })
 
 test('DoublyLinkedList - insert', () => {
+  // insert at head
+  dll.insert(0, 0)
+  expect(dll.toString()).toBe('0,1,2,3')
+
   dll.insert(2, 4)
-  expect(dll.toString()).toBe('1,2,4,3')
+  expect(dll.toString()).toBe('0,1,4,2,3')
+
+  dll.insert(5, 5)
+  expect(dll.toString()).toBe('0,1,4,2,3,5')
 })
