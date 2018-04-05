@@ -87,6 +87,12 @@ export default class LinkedList {
    * Rewrite the toString from Object.
    */
   toString() {
-
+    let current = this.head
+    let listString = ''
+    while (current) {
+      listString += ',' + current.element
+      current = current.next
+    }
+    return listString.slice(1)
   }
 }
