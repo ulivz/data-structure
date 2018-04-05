@@ -1,0 +1,65 @@
+{
+  "name": "data-structure",
+  "version": "0.0.0",
+  "description": "my splendid project",
+  "repository": {
+    "url": "ULIVZ/data-structure",
+    "type": "git"
+  },
+  "main": "dist/index.common.js",
+
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test:cov": "jest --coverage && npm run lint",
+    "test": "jest",
+    "lint": "xo src/**",
+    "prepublish": "npm run build",
+    "build": "bili --filename index",
+    "example": "poi",
+    "build:example": "poi build",
+    "gh": "gh-pages -d example/dist",
+    "deploy": "npm run build:example && npm run gh"
+
+  },
+  "author": "ULIVZ <chl814@foxmail.com>",
+  "license": "MIT",
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "homepage": "/"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          ["env", {
+            "targets": {
+              "node": "current"
+            }
+          }]
+        ]
+      }
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest-cli": "^19.0.0",
+    "eslint-config-rem": "^3.0.0",
+    "xo": "^0.18.0",
+    "babel-preset-env": "^1.4.0",
+    "gh-pages": "^1.0.0",
+    "poi": "^9.1.4",
+    "bili": "^0.17.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "jest"
+    ]
+  }
+}
