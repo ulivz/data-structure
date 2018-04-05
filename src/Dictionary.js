@@ -69,6 +69,7 @@ export default class Dictionary {
    * @returns {Array}
    */
   values() {
-    return Object.values(this.elements)
+    // ESNext Object.values.
+    return this.keys().map(key => this.elements[key])
   }
 }
