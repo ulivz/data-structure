@@ -4,7 +4,7 @@
  * Released under the MIT License.
  */
 
-class LinkedNode {
+export class LinkedNode {
   constructor(element) {
     this.element = element
     this.next = null

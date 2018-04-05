@@ -1,13 +1,12 @@
 {
   "name": "@ulivz/data-structure",
   "version": "0.0.0",
-  "description": "my splendid project",
+  "description": "javascript implementation of classic data structure.",
   "repository": {
     "url": "ULIVZ/data-structure",
     "type": "git"
   },
   "main": "dist/index.common.js",
-
   "files": [
     "dist"
   ],
@@ -21,7 +20,6 @@
     "build:example": "poi build",
     "gh": "gh-pages -d example/dist",
     "deploy": "npm run build:example && npm run gh"
-
   },
   "author": "ULIVZ <chl814@foxmail.com>",
   "license": "MIT",
@@ -37,11 +35,14 @@
     "env": {
       "test": {
         "presets": [
-          ["env", {
-            "targets": {
-              "node": "current"
+          [
+            "env",
+            {
+              "targets": {
+                "node": "current"
+              }
             }
-          }]
+          ]
         ]
       }
     }

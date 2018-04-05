@@ -31,7 +31,7 @@ export default class Queue {
 }
 
 
-class QueueElement {
+export class QueueElement {
   constructor(element, priority) {
     this.element = element
     this.priority = priority

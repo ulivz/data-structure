@@ -1,22 +1,20 @@
-
 # data-structure
 
-[![NPM version](https://img.shields.io/npm/v/data-structure.svg?style=flat)](https://npmjs.com/package/data-structure) [![NPM downloads](https://img.shields.io/npm/dm/data-structure.svg?style=flat)](https://npmjs.com/package/data-structure) [![CircleCI](https://circleci.com/gh/ULIVZ/data-structure/tree/master.svg?style=shield)](https://circleci.com/gh/ULIVZ/data-structure/tree/master)  [![codecov](https://codecov.io/gh/ULIVZ/data-structure/branch/master/graph/badge.svg)](https://codecov.io/gh/ULIVZ/data-structure)
- [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/ULIVZ/donate)
-
-## Install
-
-```bash
-npm i data-structure
-```
+JavaScript implementation of classic data structure
 
 ## Usage
 
 ```js
-const dataStructure = require('data-structure')
-
-dataStructure()
-//=> foo
+import {
+  Stack,
+  Queue,
+  QueueElement,
+  PriorityQueue,
+  LinkedList,
+  LinkedNode,
+  DoublyLinkedList,
+  DoublyLinkedNode
+} from '@ulivz/data-structure'
 ```
 
 ## Contributing

@@ -4,7 +4,7 @@
  * Released under the MIT License.
  */
 
-class DoublyLinkedNode {
+export class DoublyLinkedNode {
   constructor(element) {
     this.element = element
     this.next = null
