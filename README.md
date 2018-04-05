@@ -2,6 +2,10 @@
 
 JavaScript implementation of classic data structure
 
+<a href="https://npmjs.com/package/dast"><img src="https://img.shields.io/npm/v/dast.svg?style=flat" alt="NPM version"></a> 
+<a href="https://npmjs.com/package/dast"><img src="https://img.shields.io/npm/dm/dast.svg?style=flat" alt="NPM downloads"></a>
+<a href="https://github.com/ulivz/donate"><img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat" alt="donate"></a>
+
 ## Usage
 
 ```bash
