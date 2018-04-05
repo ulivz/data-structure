@@ -18,7 +18,7 @@ export default class LinkedList {
   }
 
   /**
-   * Add a new element to the tail of the list
+   * Add a new element to the tail of the list.
    * @param element
    */
   append(element) {
@@ -52,7 +52,7 @@ export default class LinkedList {
   }
 
   /**
-   * Returns the index of the element in the list. If the element
+   * Returns the index of the element in the list. If the element.
    * does not exist in the list, it returns -1.
    * @param element
    */
@@ -61,7 +61,7 @@ export default class LinkedList {
   }
 
   /**
-   * Remove an item from the specific location of the list
+   * Remove an item from the specific location of the list.
    * @param position
    */
   removeAt(position) {
@@ -83,6 +83,9 @@ export default class LinkedList {
 
   }
 
+  /**
+   * Rewrite the toString from Object.
+   */
   toString() {
 
   }
