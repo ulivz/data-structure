@@ -16,8 +16,6 @@
 
 ### New Classes
 
-The following 
-
 - Stack
 - Queue
 - QueueElement
