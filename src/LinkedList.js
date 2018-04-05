@@ -66,6 +66,15 @@ export default class LinkedList {
    * @param {any} element
    */
   remove(element) {
+
+  }
+
+  /**
+   * Returns the index of the element in the list. If the element.
+   * does not exist in the list, it returns -1.
+   * @param {number} index
+   */
+  indexOf(element) {
     let current = this.head
     let index = 0
     while (current) {
@@ -76,15 +85,6 @@ export default class LinkedList {
       current = current.next
     }
     return -1
-  }
-
-  /**
-   * Returns the index of the element in the list. If the element.
-   * does not exist in the list, it returns -1.
-   * @param element
-   */
-  indexOf(element) {
-
   }
 
   /**
