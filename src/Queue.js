@@ -47,6 +47,15 @@ export class PriorityQueue {
   }
 
   enqueue(element, priority) {
+
+    if (!priority) {
+      if (this.isEmpty()) {
+        priority = 0
+      } else {
+        priority = this.elements[this.size() - 1].priority - 1
+      }
+    }
+
     const queueElement = new QueueElement(element, priority)
     if (this.isEmpty()) {
       this.elements.push(queueElement)
