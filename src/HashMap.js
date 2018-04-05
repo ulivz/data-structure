@@ -1,4 +1,4 @@
-class HashMap {
+export default class HashMap {
   constructor() {
     this.storage = []
     this.count = 0
@@ -14,7 +14,7 @@ class HashMap {
   hashFunc(str, max) {
     let hashCode = 0
 
-    for (i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
       hashCode = 37 * hashCode + str.charCodeAt(i)
     }
 
@@ -23,7 +23,7 @@ class HashMap {
   }
 
   put(key, value) {
-    let index = this.hashFunc(key)
+    let index = this.hashFunc(key, this.limit)
     let bucket = this.storage[index]
 
     if (bucket === undefined) {
