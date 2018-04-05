@@ -6,26 +6,26 @@
 
 export default class Stack {
   constructor() {
-    this.items = []
+    this.elements = []
   }
 
-  push(item) {
-    this.items.push(item)
+  push(element) {
+    this.elements.push(element)
   }
 
   pop() {
-    return this.items.pop()
+    return this.elements.pop()
   }
 
   peek() {
-    return this.items[this.items.length - 1]
+    return this.elements[this.elements.length - 1]
   }
 
   isEmpty() {
-    return this.items.length === 0
+    return this.size() === 0
   }
 
   size() {
-    return this.items.length
+    return this.elements.length
   }
 }
