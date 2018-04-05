@@ -1,12 +1,12 @@
 {
   "name": "@ulivz/data-structure",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "javascript implementation of classic data structure.",
   "repository": {
     "url": "ULIVZ/data-structure",
     "type": "git"
   },
-  "main": "dist/index.common.js",
+  "main": "dist/data-structure.min.js",
   "files": [
     "dist"
   ],
@@ -21,10 +21,6 @@
     "gh": "gh-pages -d example/dist",
     "deploy": "npm run build:example && npm run gh"
   },
-  "main": "dist/data-structure.min.js",
-  "files": [
-    "dist"
-  ],
   "author": "ULIVZ <chl814@foxmail.com>",
   "license": "MIT",
   "poi": {
