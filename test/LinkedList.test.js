@@ -1,18 +1,22 @@
 import LinkedList from '../src/LinkedList'
 
-test('LinkedList', () => {
-  const linkedList = new LinkedList()
+const linkedList = new LinkedList()
+
+beforeEach(() => {
   linkedList.append(1)
   linkedList.append(2)
   linkedList.append(3)
+})
+
+afterEach(() => {
+  linkedList.clear()
+})
+
+test('LinkedList', () => {
   expect(linkedList.toString()).toBe('1,2,3')
 })
 
 test('LinkedList - insert', () => {
-  const linkedList = new LinkedList()
-  linkedList.append(1)
-  linkedList.append(2)
-  linkedList.append(3)
   linkedList.insert(1, 4)
   expect(linkedList.toString()).toBe('1,4,2,3')
   linkedList.insert(2, 5)
@@ -26,21 +30,19 @@ test('LinkedList - insert', () => {
 })
 
 test('LinkedList - removeAt', () => {
-  const linkedList = new LinkedList()
-  linkedList.append(1)
-  linkedList.append(2)
-  linkedList.append(3)
   linkedList.removeAt(1)
   expect(linkedList.toString()).toBe('1,3')
 })
 
 test('LinkedList - indexOf', () => {
-  const linkedList = new LinkedList()
-  linkedList.append(1)
-  linkedList.append(2)
-  linkedList.append(3)
   expect(linkedList.indexOf(1)).toBe(0)
   expect(linkedList.indexOf(2)).toBe(1)
   expect(linkedList.indexOf(3)).toBe(2)
   expect(linkedList.indexOf(4)).toBe(-1)
+})
+
+test('LinkedList - remove', () => {
+  linkedList.remove(2)
+  expect(linkedList.toString()).toBe('1,3')
+  expect(linkedList.toString()).toBe('1,3')
 })

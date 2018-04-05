@@ -74,7 +74,8 @@ export default class LinkedList {
   /**
    * Returns the index of the element in the list. If the element.
    * does not exist in the list, it returns -1.
-   * @param {number} index
+   * @param {any} element
+   * @returns {number} index
    */
   indexOf(element) {
     let current = this.head
@@ -115,20 +116,31 @@ export default class LinkedList {
   /**
    * If the list does not contain any elements, it returns to true.
    * If the length of the linked list is greater than 0, it returns false.
+   * @returns {boolean} is empty
    */
   isEmpty() {
-
+    return this.length === 0
   }
 
   /**
    * Returns the number of elements contained in the list.
+   * @returns {number} size
    */
   size() {
+    return this.length
+  }
 
+  /**
+   * Get first element from list.
+   * @returns {any} element
+   */
+  getFirst() {
+    return this.head.element
   }
 
   /**
    * Rewrite the toString from Object.
+   * @returns {string}
    */
   toString() {
     let current = this.head
@@ -138,5 +150,22 @@ export default class LinkedList {
       current = current.next
     }
     return listString.slice(1)
+  }
+
+  /**
+   * Clean current list's data.
+   */
+  clear() {
+    let current = this.head
+    let index = 0
+    while (current) {
+      current.element = null
+      current.next = null
+      current = current.next
+      index++
+    }
+    this.head = null
+    current = null
+    this.length = 0
   }
 }
