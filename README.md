@@ -4,17 +4,36 @@ JavaScript implementation of classic data structure
 
 ## Usage
 
+```bash
+yarn add dast -S
+```
+
 ```js
 import {
   Stack,
   Queue,
-  QueueElement,
-  PriorityQueue,
   LinkedList,
   LinkedNode,
-  DoublyLinkedList,
-  DoublyLinkedNode
-} from '@ulivz/data-structure'
+  DoublyLinkedList
+  // ...
+} from 'dast'
+```
+
+or use it with CDN:
+
+```html
+<script src="https://unpkg.com/dast@latest/dist/data-structure.min.js"></script>
+```
+
+```js
+const {
+  Stack,
+  Queue,
+  LinkedList,
+  LinkedNode,
+  DoublyLinkedList
+  // ...
+} = window.dast
 ```
 
 ## Contributing

@@ -15,7 +15,7 @@
     "test": "jest",
     "lint": "xo src/**",
     "prepublish": "npm run build",
-    "build": "bili --filename [name][suffix].js --format umd,umd-min,cjs,es --banner",
+    "build": "bili --filename [name][suffix].js --name dast --format umd,umd-min,cjs,es --banner",
     "example": "poi",
     "build:example": "poi build",
     "gh": "gh-pages -d example/dist",
