@@ -21,6 +21,10 @@
     "gh": "gh-pages -d example/dist",
     "deploy": "npm run build:example && npm run gh"
   },
+  "main": "dist/data-structure.min.js",
+  "files": [
+    "dist"
+  ],
   "author": "ULIVZ <chl814@foxmail.com>",
   "license": "MIT",
   "poi": {
