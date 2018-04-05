@@ -30,6 +30,49 @@ export default class DoublyLinkedList {
     this.length++
   }
 
+  /**
+   * insert a new element into the specific position of the list.
+   * @param {number} position
+   * @param {any} element
+   */
+  insert(position, element) {
+    if (position < 0 || position > this.length) return false
+
+    const newNode = new DoublyLinkedNode(element)
+
+    if (position === 0) {
+      if (this.head === null) {
+        this.head = newNode
+        this.tail = newNode
+      } else {
+        this.head.prev = newNode
+        newNode.next = this.head
+        this.head = newNode
+      }
+
+    } else if (position === this.length) {
+      this.tail.next = newNode
+      newNode.prev = this.tail
+      this.tail = newNode
+
+    } else {
+      let current = this.head
+      let previous = null
+      let index = 0
+      while (index++ < position) {
+        previous = current
+        current = current.next
+      }
+
+      previous.next = newNode
+      newNode.prev = previous
+      newNode.next = current
+      current.prev = newNode
+    }
+
+    this.length++
+    return true
+  }
 
   /**
    * Clean current list's data.

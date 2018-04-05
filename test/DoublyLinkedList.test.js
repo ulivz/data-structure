@@ -17,3 +17,8 @@ test('DoublyLinkedList', () => {
   expect(dll.forwardString()).toBe('1,2,3')
   expect(dll.reverseString()).toBe('3,2,1')
 })
+
+test('DoublyLinkedList - insert', () => {
+  dll.insert(2, 4)
+  expect(dll.toString()).toBe('1,2,4,3')
+})
