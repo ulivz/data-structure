@@ -1,0 +1,136 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.5
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/haolchen/Documents/__self__/data-structure',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/haolchen/.npm/@ulivz/data-structure/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/haolchen/.npm correctMkdir not in flight; initializing
+10 info lifecycle @ulivz/data-structure@0.0.1~prepublish: @ulivz/data-structure@0.0.1
+11 verbose lifecycle @ulivz/data-structure@0.0.1~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle @ulivz/data-structure@0.0.1~prepublish: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/haolchen/Documents/__self__/data-structure/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+13 verbose lifecycle @ulivz/data-structure@0.0.1~prepublish: CWD: /Users/haolchen/Documents/__self__/data-structure
+14 silly lifecycle @ulivz/data-structure@0.0.1~prepublish: Args: [ '-c', 'npm run build' ]
+15 silly lifecycle @ulivz/data-structure@0.0.1~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/Users/haolchen/.npm/@ulivz/data-structure/0.0.1/package.tgz',
+16 verbose tar pack   '/Users/haolchen/Documents/__self__/data-structure' ]
+17 verbose tarball /Users/haolchen/.npm/@ulivz/data-structure/0.0.1/package.tgz
+18 verbose folder /Users/haolchen/Documents/__self__/data-structure
+19 verbose addLocalTarball adding from inside cache /Users/haolchen/.npm/@ulivz/data-structure/0.0.1/package.tgz
+20 verbose correctMkdir /Users/haolchen/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd @ulivz/data-structure@0.0.1
+22 verbose afterAdd /Users/haolchen/.npm/@ulivz/data-structure/0.0.1/package/package.json not in flight; writing
+23 verbose correctMkdir /Users/haolchen/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /Users/haolchen/.npm/@ulivz/data-structure/0.0.1/package/package.json written
+25 silly publish { name: '@ulivz/data-structure',
+25 silly publish   version: '0.0.1',
+25 silly publish   description: 'javascript implementation of classic data structure.',
+25 silly publish   repository:
+25 silly publish    { url: 'git+https://github.com/ulivz/data-structure.git',
+25 silly publish      type: 'git' },
+25 silly publish   main: 'dist/data-structure.min.js',
+25 silly publish   files: [ 'dist' ],
+25 silly publish   scripts:
+25 silly publish    { 'test:cov': 'jest --coverage && npm run lint',
+25 silly publish      test: 'jest',
+25 silly publish      lint: 'xo src/**',
+25 silly publish      prepublish: 'npm run build',
+25 silly publish      build: 'bili --filename [name][suffix].js --format umd,umd-min,cjs,es --banner',
+25 silly publish      example: 'poi',
+25 silly publish      'build:example': 'poi build',
+25 silly publish      gh: 'gh-pages -d example/dist',
+25 silly publish      deploy: 'npm run build:example && npm run gh' },
+25 silly publish   author: { name: 'ULIVZ', email: 'chl814@foxmail.com' },
+25 silly publish   license: 'MIT',
+25 silly publish   poi:
+25 silly publish    { entry: 'example/index.js',
+25 silly publish      dist: 'example/dist',
+25 silly publish      homepage: '/' },
+25 silly publish   jest: { testEnvironment: 'node' },
+25 silly publish   babel: { env: { test: [Object] } },
+25 silly publish   devDependencies:
+25 silly publish    { 'babel-preset-env': '^1.4.0',
+25 silly publish      'eslint-config-rem': '^3.0.0',
+25 silly publish      'gh-pages': '^1.0.0',
+25 silly publish      'jest-cli': '^19.0.0',
+25 silly publish      poi: '^9.1.4',
+25 silly publish      xo: '^0.18.0',
+25 silly publish      bili: '^3.0.15' },
+25 silly publish   xo: { extends: 'rem', envs: [ 'jest' ] },
+25 silly publish   readme: '# data-structure\n\nJavaScript implementation of classic data structure\n\n## Usage\n\n```js\nimport {\n  Stack,\n  Queue,\n  QueueElement,\n  PriorityQueue,\n  LinkedList,\n  LinkedNode,\n  DoublyLinkedList,\n  DoublyLinkedNode\n} from \'@ulivz/data-structure\'\n```\n\n## Contributing\n\n1. Fork it!\n2. Create your feature branch: `git checkout -b my-new-feature`\n3. Commit your changes: `git commit -am \'Add some feature\'`\n4. Push to the branch: `git push origin my-new-feature`\n5. Submit a pull request :D\n\n\n## Author\n\n**data-structure** © [ulivz](https://github.com/ULIVZ), Released under the [MIT](./LICENSE) License.<br>\nAuthored and maintained by ulivz with help from contributors ([list](https://github.com/ULIVZ/data-structure/contributors)).\n\n> [github.com/ulivz](https://github.com/ulivz) · GitHub [@ulivz](https://github.com/ULIVZ)\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: 'bdd9a42a638a94eec8ccb7371c1703e993ac9c35',
+25 silly publish   bugs: { url: 'https://github.com/ulivz/data-structure/issues' },
+25 silly publish   homepage: 'https://github.com/ulivz/data-structure#readme',
+25 silly publish   _id: '@ulivz/data-structure@0.0.1',
+25 silly publish   _shasum: 'cf4e9e412ca1bffcf80394cbef8e1edb102d46d3',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name @ulivz/data-structure
+28 silly mapToRegistry scope (from package name) @ulivz
+29 verbose mapToRegistry no registry URL found in name for scope @ulivz
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: '@ulivz/data-structure',
+32 silly mapToRegistry   scope: '@ulivz',
+32 silly mapToRegistry   escapedName: '@ulivz%2fdata-structure',
+32 silly mapToRegistry   name: '@ulivz/data-structure',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/@ulivz%2fdata-structure
+34 verbose publish registryBase https://registry.npmjs.org/
+35 silly publish uploading /Users/haolchen/.npm/@ulivz/data-structure/0.0.1/package.tgz
+36 verbose request uri https://registry.npmjs.org/@ulivz%2fdata-structure
+37 verbose request sending authorization for write operation
+38 info attempt registry request try #1 at 9:53:46 PM
+39 verbose request using bearer token for auth
+40 verbose request id f70c481dc2d4c1df
+41 http request PUT https://registry.npmjs.org/@ulivz%2fdata-structure
+42 http 402 https://registry.npmjs.org/@ulivz%2fdata-structure
+43 verbose headers { 'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=0',
+43 verbose headers   'content-length': '49',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   date: 'Thu, 05 Apr 2018 13:53:50 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-nrt6148-NRT',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1522936430.345864,VS0,VE636' }
+44 verbose request invalidating /Users/haolchen/.npm/registry.npmjs.org/_40ulivz_252fdata-structure on PUT
+45 error publish Failed PUT 402
+46 verbose stack Error: You must sign up for private packages : @ulivz/data-structure
+46 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+46 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+46 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+46 verbose stack     at emitTwo (events.js:106:13)
+46 verbose stack     at Request.emit (events.js:191:7)
+46 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+46 verbose stack     at emitOne (events.js:96:13)
+46 verbose stack     at Request.emit (events.js:188:7)
+46 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+47 verbose statusCode 402
+48 verbose pkgid @ulivz/data-structure
+49 verbose cwd /Users/haolchen/Documents/__self__/data-structure
+50 error Darwin 16.7.0
+51 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+52 error node v6.11.5
+53 error npm  v3.10.10
+54 error code E402
+55 error You must sign up for private packages : @ulivz/data-structure
+56 error If you need help, you may report this error at:
+56 error     <https://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]

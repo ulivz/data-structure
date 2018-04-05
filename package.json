@@ -1,6 +1,6 @@
 {
-  "name": "@ulivz/data-structure",
-  "version": "0.0.1",
+  "name": "datastructure",
+  "version": "0.0.0",
   "description": "javascript implementation of classic data structure.",
   "repository": {
     "url": "ULIVZ/data-structure",
