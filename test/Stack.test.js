@@ -1,7 +1,6 @@
-import { Stack } from '../src'
-import { convertHexadecimal } from '../src/Stack.usage'
+import Stack, { convertHexadecimal } from '../src/Stack'
 
-test('stack', () => {
+test('Stack', () => {
   const stack = new Stack()
   expect(stack.size()).toBe(0)
   stack.push(1)
@@ -12,7 +11,7 @@ test('stack', () => {
   expect(stack.size()).toBe(2)
 })
 
-test('stack - hexadecimal conversion', () => {
+test('Stack - hexadecimal conversion', () => {
   expect(convertHexadecimal(5, 2)).toBe(101)
   expect(convertHexadecimal(10, 2)).toBe(1010)
 })
