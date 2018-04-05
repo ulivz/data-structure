@@ -63,10 +63,19 @@ export default class LinkedList {
 
   /**
    * Remove an item from the lists
-   * @param element
+   * @param {any} element
    */
   remove(element) {
-
+    let current = this.head
+    let index = 0
+    while (current) {
+      if (current.element === element) {
+        return index
+      }
+      index++
+      current = current.next
+    }
+    return -1
   }
 
   /**
