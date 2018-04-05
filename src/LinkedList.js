@@ -80,10 +80,25 @@ export default class LinkedList {
 
   /**
    * Remove an item from the specific location of the list.
-   * @param position
+   * @param {number} position
+   * @returns {any} the deleted element
    */
   removeAt(position) {
-
+    if (position < 0 || position >= this.length) return null
+    let current = this.head
+    let previous = null
+    let index = 0
+    if (position === 0) {
+      this.head = current.next
+    } else {
+      while (index++ < position) {
+        previous = current
+        current = current.next
+      }
+      previous.next = current.next
+    }
+    this.length--
+    return current.element
   }
 
   /**

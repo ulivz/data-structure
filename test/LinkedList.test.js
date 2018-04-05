@@ -24,3 +24,12 @@ test('LinkedList - insert', () => {
   linkedList.insert(6, 7)
   expect(linkedList.toString()).toBe('1,4,5,2,6,3,7')
 })
+
+test('LinkedList - removeAt', () => {
+  const linkedList = new LinkedList()
+  linkedList.append(1)
+  linkedList.append(2)
+  linkedList.append(3)
+  linkedList.removeAt(1)
+  expect(linkedList.toString()).toBe('1,3')
+})
