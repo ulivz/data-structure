@@ -1,3 +1,9 @@
+/*!
+ * @ulivz/data-structure v0.0.1
+ * (c) 2016-2018 ULIVZ
+ * Released under the MIT License.
+ */
+
 export default class Queue {
   constructor() {
     this.items = []
@@ -22,4 +28,8 @@ export default class Queue {
   size() {
     return this.items.length
   }
+}
+
+export class PriorityQueue {
+
 }
