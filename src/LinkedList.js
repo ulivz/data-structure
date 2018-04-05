@@ -22,15 +22,15 @@ export default class LinkedList {
    * @param element
    */
   append(element) {
-    const node = new LinkedNode(element)
+    const newNode = new LinkedNode(element)
     if (this.head === null) {
-      this.head = node
+      this.head = newNode
     } else {
       let current = this.head
       while (current.next) {
         current = current.next
       }
-      current.next = node
+      current.next = newNode
     }
     this.length++
   }
@@ -41,6 +41,24 @@ export default class LinkedList {
    * @param element
    */
   insert(position, element) {
+    if (position < 0 || position > this.length) return false
+    const newNode = new LinkedNode(element)
+    let current = this.head
+    let previous = null
+    let index = 0
+    if (position === 0) {
+      newNode.next = current
+      this.head = newNode
+    } else {
+      while (index++ < position) {
+        previous = current
+        current = current.next
+      }
+      previous.next = newNode
+      newNode.next = current
+    }
+    this.length++
+    return true
   }
 
   /**
