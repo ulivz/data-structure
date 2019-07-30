@@ -1,5 +1,7 @@
 # data-structure
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ulivz/data-structure.svg)](https://greenkeeper.io/)
+
 JavaScript implementation of classic data structure
 
 <a href="https://npmjs.com/package/dast"><img src="https://img.shields.io/npm/v/dast.svg?style=flat" alt="NPM version"></a> 
